@@ -1,12 +1,7 @@
 while(True):
-    n = input()
-    if not n:
+    try:
+        a,b = map(int, input().split())
+        0<a and b<10
+        print (a+b)
+    except:
         break
-    else:
-        a,b = n.split()
-        if 0<int(a)<10 and 0<int(b)<10:
-            print (int(a)+int(b))
-        else:
-            break
-        
-    
